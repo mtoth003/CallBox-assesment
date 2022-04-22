@@ -1,0 +1,7 @@
+Exercise 1 - Created a card for each group of employees, arranged by department, to display their name, position and phone number. Flexbox was used to to align each row of cards and media queries make the page responsive. 
+
+Exercise 2 - File found in the image folder titled CadillacCT5. Created the image using Figma, highlighted the special APR offer in larger font and a few vehicle features on the bottom of the slide.
+
+Exercise 3 - Created the navigation menu as a simple horizontal navbar. I used flexbox and media queries to make the navbar responsive. On medium screens the "CompanyName" will be displayed as the "Logo" of the company; on small screens the "home" section of the nav menu is removed because the logo servces the same routing purpose. I used vanilla javascript to create the inventory dropdown by simply toggling an "active" class when inventory is clicked and removing the class if the user clicks anywhere on the page once it's opened.
+
+Bonus Solution - This is written in the same script.js file. I created a function, "findMatch", which takes two arrays as arguments. I then used the .filter() method to check each element in the first array and return a new array with values that are also present in the second array, using the .includes() method on the second array.

@@ -28,9 +28,17 @@ nav .navbar {
   padding: 0 50px;
 }
 
-nav .navbar .logo a {
+nav .navbar .name a {
   color: #333;
   font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo a {
+  display: none;
+  color: #333;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -91,6 +99,19 @@ nav .navbar .nav-links .links li .arrow {
 .navbar .nav-links .links .sub-menu li a {
   font-size: 15px;
   font: 500;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
 }
 
 #dropdown.active {
@@ -182,7 +203,6 @@ nav .navbar .nav-links .links li .arrow {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  color: #333;
   margin: 20px 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
@@ -302,5 +322,42 @@ nav .navbar .nav-links .links li .arrow {
     justify-content: center;
     align-items: center;
     /* width: 50%; */
+  }
+
+  .navbar {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .name a {
+    display: none;
+  }
+
+  .logo a {
+    display: block;
+  }
+}
+
+@media (max-width: 468px) {
+  .footer ul {
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .footer ul li {
+    padding: 2px 0;
+  }
+
+  .footer .small-logo {
+    display: none;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .logo a {
+    display: none;
   }
 }
